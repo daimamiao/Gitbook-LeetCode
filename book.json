@@ -1,0 +1,35 @@
+{
+    "title": "LeetCode题解-C语言版本",
+    "author": "XCC <ybzbxcc@163.com>",
+    "description": "LeetCode题解-C语言版本",
+    "extension": null,
+    "generator": "website",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "iamxcc's github": "http://github.com/iamxcc"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "plugins": [],
+    "variables": {}
+}
