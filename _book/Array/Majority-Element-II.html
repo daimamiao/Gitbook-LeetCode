@@ -1,0 +1,519 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Majority Element II · LeetCode题解-C语言版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="author" content="XCC <ybzbxcc@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Product-of-Array-Except-Self.html" />
+    
+    
+    <link rel="prev" href="Contains-Duplicate.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://github.com/iamxcc" target="_blank" class="custom-link">iamxcc's github</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Container-With-Most-Water.html">
+            
+                <a href="Container-With-Most-Water.html">
+            
+                    
+                    Container With Most Water
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Find-Minimum-in-Rotated-Sorted-Array-I-II.html">
+            
+                <a href="Find-Minimum-in-Rotated-Sorted-Array-I-II.html">
+            
+                    
+                    Find Minimum in Rotated Sorted Array-I-II.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Find-Peak-Element.html">
+            
+                <a href="Find-Peak-Element.html">
+            
+                    
+                    Find Peak Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="Majority-Element.html">
+            
+                <a href="Majority-Element.html">
+            
+                    
+                    Majority Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Contains-Duplicate.html">
+            
+                <a href="Contains-Duplicate.html">
+            
+                    
+                    Contains Duplicate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="Majority-Element-II.html">
+            
+                <a href="Majority-Element-II.html">
+            
+                    
+                    Majority Element II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Product-of-Array-Except-Self.html">
+            
+                <a href="Product-of-Array-Except-Self.html">
+            
+                    
+                    Product of Array Except Self
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="Missing-Number.html">
+            
+                <a href="Missing-Number.html">
+            
+                    
+                    Missing Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="Move-Zeroes.html">
+            
+                <a href="Move-Zeroes.html">
+            
+                    
+                    Move Zeroes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="Find-the-Duplicate-Number.html">
+            
+                <a href="Find-the-Duplicate-Number.html">
+            
+                    
+                    Find the Duplicate Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="Search-Insert-Position.html">
+            
+                <a href="Search-Insert-Position.html">
+            
+                    
+                    Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="Kth-Smallest-Element-in-a-Sorted-Matrix.html">
+            
+                <a href="Kth-Smallest-Element-in-a-Sorted-Matrix.html">
+            
+                    
+                    Kth Smallest Element in a Sorted Matrix.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="Search-a-2D-Matrix.html">
+            
+                <a href="Search-a-2D-Matrix.html">
+            
+                    
+                    Search a 2D Matrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="Rotate-Image.html">
+            
+                <a href="Rotate-Image.html">
+            
+                    
+                    Rotate Image.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Majority Element II</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Given an integer array of size n, find all elements that appear more than &#x230A; n/3 &#x230B; times. The algorithm should run in linear time and in O(1) space.<!--more-->
+Hint:
+1. How many majority elements could it possibly have?
+2. Do you have a better hint? Suggest it!</p><h3 id="&#x9898;&#x610F;">&#x9898;&#x610F;</h3><h3 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h3><p>&#x8FD9;&#x9053;&#x9898;&#x8BA9;&#x6211;&#x4EEC;&#x6C42;&#x51FA;&#x73B0;&#x6B21;&#x6570;&#x5927;&#x4E8E;n/3&#x7684;&#x4F17;&#x6570;&#xFF0C;&#x800C;&#x4E14;&#x9650;&#x5B9A;&#x4E86;&#x65F6;&#x95F4;&#x548C;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4E0D;&#x80FD;&#x6392;&#x5E8F;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x54C8;&#x5E0C;&#x8868;&#xFF0C;&#x8FD9;&#x4E48;&#x82DB;&#x523B;&#x7684;&#x9650;&#x5236;&#x6761;&#x4EF6;&#x53EA;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x80FD;&#x89E3;&#x4E86;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x6469;&#x5C14;&#x6295;&#x7968;&#x6CD5; Moore Voting&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x5728;&#x4E4B;&#x524D;&#x90A3;&#x9053;&#x9898;Majority Element &#x6C42;&#x4F17;&#x6570;&#x4E2D;&#x4E5F;&#x4F7F;&#x7528;&#x4E86;&#x3002;&#x9898;&#x76EE;&#x4E2D;&#x7ED9;&#x4E86;&#x4E00;&#x6761;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x63D0;&#x793A;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5148;&#x8003;&#x8651;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x4F17;&#x6570;&#x3002;&#x90A3;&#x4E48;&#x6709;&#x4E86;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6295;&#x7968;&#x6CD5;&#x7684;&#x6838;&#x5FC3;&#x662F;&#x627E;&#x51FA;&#x4E24;&#x4E2A;&#x5019;&#x9009;&#x4F17;&#x6570;&#x8FDB;&#x884C;&#x6295;&#x7968;&#xFF0C;&#x9700;&#x8981;&#x4E24;&#x904D;&#x904D;&#x5386;&#xFF0C;&#x7B2C;&#x4E00;&#x904D;&#x5386;&#x627E;&#x51FA;&#x4E24;&#x4E2A;&#x5019;&#x9009;&#x4F17;&#x6570;&#xFF0C;&#x7B2C;&#x4E8C;&#x904D;&#x904D;&#x5386;&#x91CD;&#x65B0;&#x6295;&#x7968;&#x9A8C;&#x8BC1;&#x8FD9;&#x4E24;&#x4E2A;&#x5019;&#x9009;&#x4F17;&#x6570;&#x662F;&#x5426;&#x4E3A;&#x4F17;&#x6570;&#x5373;&#x53EF;&#xFF0C;&#x9009;&#x5019;&#x9009;&#x4F17;&#x6570;&#x65B9;&#x6CD5;&#x548C;&#x524D;&#x9762;&#x90A3;&#x7BC7;Majority Element &#x6C42;&#x4F17;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x7531;&#x4E8E;&#x4E4B;&#x524D;&#x90A3;&#x9898;&#x9898;&#x76EE;&#x4E2D;&#x9650;&#x5B9A;&#x4E86;&#x4E00;&#x5B9A;&#x4F1A;&#x6709;&#x4F17;&#x6570;&#x5B58;&#x5728;&#xFF0C;&#x6545;&#x800C;&#x7701;&#x7565;&#x4E86;&#x9A8C;&#x8BC1;&#x5019;&#x9009;&#x4F17;&#x6570;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x8FD9;&#x9053;&#x9898;&#x5374;&#x6CA1;&#x6709;&#x8FD9;&#x79CD;&#x9650;&#x5B9A;&#xFF0C;&#x5373;&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#x7684;&#x4F17;&#x6570;&#x53EF;&#x80FD;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x6709;&#x9A8C;&#x8BC1;&#x3002;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p><h3 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h3><p>C&#x8BED;&#x8A00;&#x7248;&#x672C;&#xFF1A;</p><pre><code class="lang-c"><span class="hljs-comment">/**
+ * Return an array of size *returnSize.
+ * Note: The returned array must be malloced, assume caller calls free().
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span>* <span class="hljs-title">majorityElement</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* nums, <span class="hljs-keyword">int</span> numsSize, <span class="hljs-keyword">int</span>* returnSize)</span> </span>{
+    <span class="hljs-keyword">int</span>* res = (<span class="hljs-keyword">int</span>*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>)*numsSize);
+    <span class="hljs-keyword">int</span> firstNum = <span class="hljs-number">0</span>, secondNum = <span class="hljs-number">0</span>, countFN = <span class="hljs-number">0</span>, countSN = <span class="hljs-number">0</span>; 
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;numsSize; i++){
+        <span class="hljs-keyword">if</span> (nums[i] == firstNum){
+            countFN++;
+        }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[i] == secondNum){
+            countSN++;
+        }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (countFN == <span class="hljs-number">0</span>){
+            firstNum = nums[i];
+            countFN = <span class="hljs-number">1</span>;
+        }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (countSN == <span class="hljs-number">0</span>){
+            secondNum = nums[i];
+            countSN = <span class="hljs-number">1</span>;
+        }<span class="hljs-keyword">else</span>{
+            countFN--;
+            countSN--;
+        }
+    }
+    countFN = countSN = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;numsSize; i++) {
+        <span class="hljs-keyword">if</span> (nums[i] == firstNum){
+            ++countFN;
+        } 
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (nums[i] == secondNum){
+            ++countSN;
+        } 
+    }
+    <span class="hljs-keyword">if</span> (countFN &gt; numsSize/<span class="hljs-number">3</span>){
+        res[<span class="hljs-number">0</span>] = firstNum;
+    }
+    <span class="hljs-keyword">if</span> (countSN &gt; numsSize/<span class="hljs-number">3</span>){
+        res[<span class="hljs-number">1</span>] = secondNum;
+    }
+    *returnSize = numsSize;
+    <span class="hljs-keyword">return</span> res;
+
+}</code></pre>
+<p>C++&#x7248;&#x672C;&#xFF1A;</p><pre><code class="lang-cpp"><span class="hljs-keyword">class</span> Solution {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; majorityElement(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; nums) {
+        <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; res;
+        <span class="hljs-keyword">int</span> m = <span class="hljs-number">0</span>, n = <span class="hljs-number">0</span>, cm = <span class="hljs-number">0</span>, cn = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> &amp;a : nums) {
+            <span class="hljs-keyword">if</span> (a == m) ++cm;
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a ==n) ++cn;
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (cm == <span class="hljs-number">0</span>) m = a, cm = <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (cn == <span class="hljs-number">0</span>) n = a, cn = <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">else</span> --cm, --cn;
+        }
+        cm = cn = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> &amp;a : nums) {
+            <span class="hljs-keyword">if</span> (a == m) ++cm;
+            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a == n) ++cn;
+        }
+        <span class="hljs-keyword">if</span> (cm &gt; nums.size() / <span class="hljs-number">3</span>) res.push_back(m);
+        <span class="hljs-keyword">if</span> (cn &gt; nums.size() / <span class="hljs-number">3</span>) res.push_back(n);
+        <span class="hljs-keyword">return</span> res;
+    }
+};</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Contains-Duplicate.html" class="navigation navigation-prev " aria-label="Previous page: Contains Duplicate">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Product-of-Array-Except-Self.html" class="navigation navigation-next " aria-label="Next page: Product of Array Except Self">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Majority Element II","date":"2016-07-31T22:29:46.000Z","tags":["LeetCode","Array"],"categories":"LeetCode","thumbnail":"http://7xveyh.com1.z0.glb.clouddn.com/logolarge.jpg","level":"1.2.6","depth":2,"next":{"title":"Product of Array Except Self","level":"1.2.7","depth":2,"path":"Array/Product-of-Array-Except-Self.md","ref":"Array/Product-of-Array-Except-Self.md","articles":[]},"previous":{"title":"Contains Duplicate","level":"1.2.5","depth":2,"path":"Array/Contains-Duplicate.md","ref":"Array/Contains-Duplicate.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"XCC <ybzbxcc@163.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LeetCode题解-C语言版本","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"iamxcc's github":"http://github.com/iamxcc"}},"gitbook":"*","description":"LeetCode题解-C语言版本","extension":null},"file":{"path":"Array/Majority-Element-II.md","mtime":"2016-08-02T00:32:08.475Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-17T08:50:51.668Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

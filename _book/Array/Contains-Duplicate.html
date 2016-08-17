@@ -1,0 +1,470 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Contains Duplicate · LeetCode题解-C语言版本</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="author" content="XCC <ybzbxcc@163.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Majority-Element-II.html" />
+    
+    
+    <link rel="prev" href="Majority-Element.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://github.com/iamxcc" target="_blank" class="custom-link">iamxcc's github</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Container-With-Most-Water.html">
+            
+                <a href="Container-With-Most-Water.html">
+            
+                    
+                    Container With Most Water
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Find-Minimum-in-Rotated-Sorted-Array-I-II.html">
+            
+                <a href="Find-Minimum-in-Rotated-Sorted-Array-I-II.html">
+            
+                    
+                    Find Minimum in Rotated Sorted Array-I-II.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Find-Peak-Element.html">
+            
+                <a href="Find-Peak-Element.html">
+            
+                    
+                    Find Peak Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="Majority-Element.html">
+            
+                <a href="Majority-Element.html">
+            
+                    
+                    Majority Element
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="Contains-Duplicate.html">
+            
+                <a href="Contains-Duplicate.html">
+            
+                    
+                    Contains Duplicate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="Majority-Element-II.html">
+            
+                <a href="Majority-Element-II.html">
+            
+                    
+                    Majority Element II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Product-of-Array-Except-Self.html">
+            
+                <a href="Product-of-Array-Except-Self.html">
+            
+                    
+                    Product of Array Except Self
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="Missing-Number.html">
+            
+                <a href="Missing-Number.html">
+            
+                    
+                    Missing Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="Move-Zeroes.html">
+            
+                <a href="Move-Zeroes.html">
+            
+                    
+                    Move Zeroes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="Find-the-Duplicate-Number.html">
+            
+                <a href="Find-the-Duplicate-Number.html">
+            
+                    
+                    Find the Duplicate Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="Search-Insert-Position.html">
+            
+                <a href="Search-Insert-Position.html">
+            
+                    
+                    Search Insert Position
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="Kth-Smallest-Element-in-a-Sorted-Matrix.html">
+            
+                <a href="Kth-Smallest-Element-in-a-Sorted-Matrix.html">
+            
+                    
+                    Kth Smallest Element in a Sorted Matrix.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="Search-a-2D-Matrix.html">
+            
+                <a href="Search-a-2D-Matrix.html">
+            
+                    
+                    Search a 2D Matrix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="Rotate-Image.html">
+            
+                <a href="Rotate-Image.html">
+            
+                    
+                    Rotate Image.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Contains Duplicate</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array<!--more-->,and it should return false if every element is distinct.</p><h3 id="&#x9898;&#x610F;">&#x9898;&#x610F;</h3><p>&#x5927;&#x6982;&#x4E3A;, &#x8003;&#x8651;&#x4E00;&#x4E2A;&#x6574;&#x578B;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x627E;&#x51FA;&#x662F;&#x5426;&#x8BE5;&#x6570;&#x7EC4;&#x6709;&#x91CD;&#x590D;&#x7684;&#x6570;&#x3002;&#x5982;&#x679C;&#x6709;&#x6570;&#x51FA;&#x73B0;&#x8D85;&#x8FC7;&#x4E24;&#x6B21;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x7684;&#x51FD;&#x6570;&#x8FD4;&#x56DE;<code>ture</code>&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;<code>false</code>&#x3002;</p><h3 id="&#x7A0B;&#x5E8F;c&#x8BED;&#x8A00;">&#x7A0B;&#x5E8F;(C&#x8BED;&#x8A00;)</h3><pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">cmp</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span>* a, <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span>* b)</span></span>{
+    <span class="hljs-keyword">return</span> *a - *b;
+}
+<span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">containsDuplicate</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* nums, <span class="hljs-keyword">int</span> numsSize)</span> </span>{
+    qsort(nums, numsSize, <span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>), cmp);
+    <span class="hljs-keyword">if</span> (numsSize &lt; <span class="hljs-number">2</span>){
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+    <span class="hljs-keyword">int</span> i;
+    <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>; i&lt;(numsSize<span class="hljs-number">-1</span>); i++){
+        <span class="hljs-keyword">if</span> (nums[i] == nums[i+<span class="hljs-number">1</span>]){
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        }
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}</code></pre>
+<h3 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h3><p><code>16 / 16 test cases passed.</code>
+Status: <code>Accepted</code>
+Runtime: <code>12 ms</code></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Majority-Element.html" class="navigation navigation-prev " aria-label="Previous page: Majority Element">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Majority-Element-II.html" class="navigation navigation-next " aria-label="Next page: Majority Element II">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Contains Duplicate","date":"2016-07-30T18:34:47.000Z","tags":["LeetCode","Array"],"categories":"LeetCode","thumbnail":"http://7xveyh.com1.z0.glb.clouddn.com/logolarge.jpg","level":"1.2.5","depth":2,"next":{"title":"Majority Element II","level":"1.2.6","depth":2,"path":"Array/Majority-Element-II.md","ref":"Array/Majority-Element-II.md","articles":[]},"previous":{"title":"Majority Element","level":"1.2.4","depth":2,"path":"Array/Majority-Element.md","ref":"Array/Majority-Element.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"XCC <ybzbxcc@163.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LeetCode题解-C语言版本","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"iamxcc's github":"http://github.com/iamxcc"}},"gitbook":"*","description":"LeetCode题解-C语言版本","extension":null},"file":{"path":"Array/Contains-Duplicate.md","mtime":"2016-08-03T08:17:41.745Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-17T08:50:51.668Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
